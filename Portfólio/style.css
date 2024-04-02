@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.69),rgba(0, 0, 0, 0.751)), url(imagens/Portfolio3.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Roboto", sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.093);
+    height: 70px;
+}
+
+.logo{
+    font-size: 1.6rem;
+    color: white;
+}
+
+ul li{
+    display: inline-block;
+}
+
+li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1rem;
+    position: relative;
+}
+
+li a::after{
+    content: " ";
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 0%;
+    height: 1px;
+    background-color: #ffff42;
+    transition: 0.4s ease-in-out;
+}
+
+li a:hover::after{
+    width: 100%;
+}
+
+#quem{
+    border: 2px solid #ffff42;
+    color: #ffff42;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-left: 20px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+#quem:hover{
+    background-color: #ffff42;
+    color: black;
+}
+
+#quem:hover::after{
+    width: 0%;
+}
+
+main{
+    color: white;
+    position: absolute;
+    top: 55%;
+    left: 10%;
+    transform: translateY(-50%);
+}
+
+main h2{
+    margin-bottom: 10px;
+}
+
+main h1{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+span{
+    color: #ffff42;
+}
+
+p{
+    margin-bottom: 10px;
+}
+
+a i{
+    color: #ffff42;
+    font-size: 40px;
+}
+
+#insta{
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.quem{
+    border: 2px solid #ffff42;
+    color: #ffff42;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: 0.3s;
+    font-weight: bold;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.quem:hover{
+    background-color: #ffff42;
+    color: black;
+}
